@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <a href="/contact">Contact</a>
+    <br />
+
+    <div class="env-wrapper">
+
+        <form action="/connect" method="POST">
+
+            <label for="environment">Select your environment</label>
+            <select name="environment" id="environment">
+                <option value="production" selected>Production</option>
+                <option value="sandbox">sandbox</option>
+            </select>
+
+            <button type="submit">Start</button>
+
+        </form>
+
+        <a href="/connect">Start Auth</a>
+    </div>
+</body>
+</html>
