@@ -27,7 +27,8 @@ app.get("/", (req, res) =>{
 
 app.get("/contact", (req, res) =>{
     // res.send("Welcome to contact page");
-    res.status(200).sendFile(`${viewsPath}/contact.html`);
+    console.log('auth');
+        res.status(200).sendFile(`${viewsPath}/contact.html`);
 });
 
 app.get('/connect', (req, res) => {
